@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_property_info_addresses",
+  "info": {
+    "displayName": "address",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "unitNumber": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string",
+      "required": true,
+      "minLength": 5
+    },
+    "city": {
+      "type": "string",
+      "required": true,
+      "minLength": 2
+    },
+    "province": {
+      "type": "enumeration",
+      "enum": [
+        "BC",
+        "AB",
+        "ON"
+      ],
+      "required": true
+    },
+    "postalCode": {
+      "type": "string",
+      "required": true,
+      "maxLength": 7,
+      "minLength": 6
+    }
+  }
+}
